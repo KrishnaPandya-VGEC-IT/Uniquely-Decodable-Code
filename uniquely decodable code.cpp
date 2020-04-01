@@ -49,12 +49,12 @@ int main()
 				{
 					if(v.at(j).substr(0,min).compare((v.at(i)))==0)		//if small string is prefix of big string
 					{
-						cout<<"\n\t matched "<<v.at(i)<<" and "<<v.at(j)<<" for "<<min<<" characters ";
+						//cout<<"\n\t matched "<<v.at(i)<<" and "<<v.at(j)<<" for "<<min<<" characters ";
 						for(k=0;k<original_size;k++)
 						{
 							if(v.at(j).substr(min,v.at(j).size()).compare(v.at(k))==0)	//if str to be added is in the original elements
 							{
-								cout<<"\n\t Substr : "<<v.at(j).substr(min,v.at(j).size())<<" found at original array at position : "<<k+1<<" \t\t i.e.,vector v["<<k<<"] : "<<v.at(j).substr(min,v.at(j).size());
+								//cout<<"\n\t Substr : "<<v.at(j).substr(min,v.at(j).size())<<" found at original array at position : "<<k+1<<" \t\t i.e.,vector v["<<k<<"] : "<<v.at(j).substr(min,v.at(j).size());
 								cout<<"\n\n THE CODE IS NOT UNIQUELY DECODABLE!";		
 								goto hi;
 							}
@@ -70,7 +70,7 @@ int main()
 						}
 						if(flag2==0)	//if 'string to be added' is not found anywhere
 						{
-							cout<<"\n\t Adding string : "<<v.at(j).substr(min,v.at(j).size())<<" to end!";
+							//cout<<"\n\t Adding string : "<<v.at(j).substr(min,v.at(j).size())<<" to end!";
 							v.push_back(v.at(j).substr(min,v.at(j).size()));
 							i=v.size()-1;
 						}
@@ -80,12 +80,12 @@ int main()
 				{	
 					if(v.at(i).substr(0,min).compare((v.at(j)))==0)		//if small string is prefix of big string
 					{
-						cout<<"\n\t matched "<<v.at(i)<<" and "<<v.at(j)<<" for "<<min<<" characters ";
+						//cout<<"\n\t matched "<<v.at(i)<<" and "<<v.at(j)<<" for "<<min<<" characters ";
 						for(k=0;k<original_size;k++)
 						{
 							if(v.at(i).substr(min,v.at(i).size()).compare(v.at(k))==0)
 							{
-								cout<<"\n\t Substr : "<<v.at(i).substr(min,v.at(i).size())<<" found at original array at position : "<<k+1<<" \t\t i.e., vector v["<<k<<"] : "<<v.at(i).substr(min,v.at(i).size());
+								//cout<<"\n\t Substr : "<<v.at(i).substr(min,v.at(i).size())<<" found at original array at position : "<<k+1<<" \t\t i.e., vector v["<<k<<"] : "<<v.at(i).substr(min,v.at(i).size());
 								cout<<"\n\n THE CODE IS NOT UNIQUELY DECODABLE!";		
 								goto hi;
 							}
@@ -101,7 +101,7 @@ int main()
 						}
 						if(flag2==0)
 						{
-							cout<<"\n\t Adding string : "<<v.at(i).substr(min,v.at(i).size())<<" to end!";
+							//cout<<"\n\t Adding string : "<<v.at(i).substr(min,v.at(i).size())<<" to end!";
 							v.push_back(v.at(i).substr(min,v.at(i).size()));
 							i=v.size()-1;
 						}
