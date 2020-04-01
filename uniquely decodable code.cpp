@@ -1,5 +1,3 @@
-/* Completely created by Krishna Pandya-170170116023 */
-
 #include<iostream>
 #include<vector>
 
